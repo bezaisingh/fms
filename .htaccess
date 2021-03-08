@@ -1,0 +1,16 @@
+Options +FollowSymLinks
+Options All -Indexes
+RewriteEngine On
+RewriteRule sync ./application/controller/control.php
+RewriteRule home ./application/dashboard/index.php
+RewriteRule entry ./application/dashboard/receiving-dispatching.php
+RewriteRule search ./application/dashboard/ddr-find.php
+RewriteRule track ./application/dashboard/public-find.php
+RewriteRule update ./application/dashboard/logger-customize.php
+RewriteRule single-day-report ./application/dashboard/sdreport.php
+RewriteRule multiple-day-report ./application/dashboard/mdreport.php
+RewriteRule account ./application/dashboard/acc-details.php
+RewriteRule register ./application/dashboard/auth.php
+RewriteRule fms-login-details ./application/dashboard/user-pass-list.php
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
